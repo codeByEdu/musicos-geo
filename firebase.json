@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "find musicians",
+    "public": "dist/musicos-geo",
     "ignore": [
       "firebase.json",
       "**/.*",
