@@ -19,15 +19,14 @@ export class MusicoHomeComponent {
   constructor(private nexmoService: NexmoService) { }
 
   sendSMS(text: string) {
-    this.nexmoService.sendSMS(text)
-      .subscribe(
-        response => {
-          console.log('Resposta do servidor:', response);
-        },
-        error => {
-          console.error('Erro na chamada ao serviço:', error);
-        }
-      );
+    this.nexmoService.sendSMS(text).subscribe(
+      response => {
+        console.log('Resposta do servidor:', response);
+      },
+      error => {
+        console.error('Erro na chamada ao serviço:', error);
+      }
+    );
   }
 
   inscrever() {
@@ -36,7 +35,7 @@ export class MusicoHomeComponent {
       (err) => this.error(err),
       {
         enableHighAccuracy: true,
-        timeout: 5000
+        timeout: 15000
       }
     );
   }
