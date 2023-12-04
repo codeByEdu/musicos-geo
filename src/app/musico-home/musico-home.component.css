@@ -1,0 +1,53 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('partituras.webp');
+
+    backdrop-filter: blur(100%);
+    /* Substitua 'seu-background.jpg' pelo caminho da sua imagem de background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+
+.blur-container {
+    backdrop-filter: blur(200px), brightness(0.5) !important;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    /* Ajuste o valor alpha para controlar a intensidade do escurecimento */
+    padding: 20px;
+    /* Adicione algum espaço interno para os botões */
+    border-radius: 10px;
+    /* Borda arredondada */
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn-container button {
+    margin: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+    margin: 5px;
+    transition-duration: 0.4s;
+}
